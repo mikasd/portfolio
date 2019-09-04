@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
-
+const port = process.env.PORT || 8080;
 const app = express();
 
 app.use(morgan('dev'));
@@ -38,6 +38,6 @@ app.get('/', (req, res) => {
     res.send('404').status(404);
   })
     
-app.listen(3000, () => {
-    console.log('listening at http://localhost:3000');
+app.listen(port, () => {
+    console.log(`listening at ${port}`);
 });
