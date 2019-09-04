@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "my personal portfolio",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha tests --exit"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikasd/portfolio.git"
@@ -22,6 +19,7 @@
     "express": "^4.17.1",
     "fs": "0.0.1-security",
     "googleapis": "^39.2.0",
+    "mocha": "^6.2.0",
     "morgan": "^1.9.1"
   }
 }
